@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .menubar {
+            display: flex;
+            justify-content: space-between;
+            background-color: rgb(234, 156, 29);
+            height: 50px;
+
+        }
+
+        h3 {
+            margin-left: 20px;
+            color: white;
+        }
+
+        .leftside {
+            width: 20%;
+        }
+
+        .rightside {
+            width: 70%;
+
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+            font-size: 15px;
+
+        }
+
+        a:hover {
+            color: white;
+        }
+
+        ul {
+            display: flex;
+            justify-content: space-around;
+
+        }
+
+        .container {
+            background-color: rgb(29, 29, 28, 10);
+            background-image: url(Chopped-Cheese-02.png);
+            background-size: cover;
+            background-position: center;
+            background-blend-mode: overlay;
+        }
+
+        h1 {
+            font-size: 90px;
+            text-align: center;
+            color: rgb(236, 233, 233);
+        }
+
+        h2 {
+            font-size: 70px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            text-align: center;
+            color: rgb(236, 233, 233);
+        }
+
+        span {
+            color: rgb(234, 156, 29);
+        }
+
+        .btn {
+            display: flex;
+            justify-content: center;
+            padding: 20px;
+
+        }
+
+        button {
+            background-color: rgb(234, 156, 29);
+            padding: 15px;
+            border-radius: 25px;
+            font-size: 20px;
+            color: white;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+ 
+        .recipe {
+            display: flex;
+            justify-content: space-between;
+            margin: 0px 3%;
+            padding-bottom: 32px;
+            cursor: pointer;
+            position: relative;
+
+
+
+
+        }
+
+
+        .light-box {
+          
+            width: 30%;
+
+
+        }
+
+      
+        .light-room{
+          
+            width: 400px;
+            height: 400px;
+            object-fit: cover;
+            border-radius: 10%;
+
+        }
+
+        .light-text{
+            background-color: rgb(0, 0, 0, 0.0);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-transform: uppercase;
+            color:  transparent;
+            width: 400px;
+            height: 400px;
+            position: absolute;
+            top: 0;
+            border-radius: 10%;
+            transition: 0.8 ease out;
+          
+        
+
+        }
+
+
+       
+
+
+
+      
+    </style>
+    <div class="container">
+        <div class="menubar">
+            <div class="leftside">
+                <h3>COMFORT EATS</h3>
+            </div>
+            <div class="rightside">
+                <ul>
+                    <a href="http://">HOME</a>
+                    <a href="http://">RECIPE</a>
+                    <a href="http://">CONTACT US</a>
+                </ul>
+            </div>
+        </div>
+        <h1>ONE - STOP <span>DELICIOUS</span> FOODS PLACE.</h1>
+        <div class="btn">
+            <button>ORDER NOW</button>
+        </div>
+        <h2>RECIPE</h2>
+        <div class="recipe">
+            <div class="lightBox ">
+
+                <img class=" light-room"  src="Cheeseburger-Casserole-01.png" alt="">
+                <a href="cheese.html">
+                    <div class="light-text" id="cheese">cheese burger</div>
+
+                </a>
+            </div>
+            <div class="lightBox">
+
+                <img class=" light-room" src="Chopped-Cheese-02.png" alt="">
+                <a href="chopped-cheese.html">
+
+                    <div class="light-text" id="chopped-cheese"> chopped cheese</div>
+                </a>
+            </div>
+            <div class="lightBox">
+
+                <img class=" light-room" src="Creamy-Lima-Beans-01.png" alt="">
+                <a href="creamy.html">
+
+                    <div class="light-text" id="creamy">creamy Lima beans</div>
+                </a>
+            </div>
+
+        </div>
+
+
+    </div>
+
+    <script>
+         //for cheese //
+        document.getElementById("cheese").addEventListener("mouseover", mouseOver)
+        document.getElementById("cheese").addEventListener("mouseout", mouseOut)
+        
+        function mouseOver() {
+            document.getElementById("cheese").style.backgroundColor = "rgb(0, 0, 0, 0.9)";
+            document.getElementById("cheese").style.color = "#ddd";
+          }
+        function mouseOut() {
+            document.getElementById("cheese").style.backgroundColor = "rgb(0, 0, 0, 0.0)";
+            document.getElementById("cheese").style.color = "transparent";
+          }
+
+          //for chopped cheese //
+        document.getElementById("chopped-cheese").addEventListener("mouseover", choppedMouseOver)
+        document.getElementById("chopped-cheese").addEventListener("mouseout", choppedMouseOut)
+        
+        function choppedMouseOver() {
+            document.getElementById("chopped-cheese").style.backgroundColor = "rgb(0, 0, 0, 0.9)";
+            document.getElementById("chopped-cheese").style.color = "#ddd";
+          }
+        function choppedMouseOut() {
+            document.getElementById("chopped-cheese").style.backgroundColor = "rgb(0, 0, 0, 0.0)";
+            document.getElementById("chopped-cheese").style.color = "transparent";
+          }
+
+          //for chopped cheese //
+        document.getElementById("creamy").addEventListener("mouseover", creamyMouseOver)
+        document.getElementById("creamy").addEventListener("mouseout", creamyMouseOut)
+        
+        function creamyMouseOver() {
+            document.getElementById("creamy").style.backgroundColor = "rgb(0, 0, 0, 0.9)";
+            document.getElementById("creamy").style.color = "#ddd";
+          }
+        function creamyMouseOut() {
+            document.getElementById("creamy").style.backgroundColor = "rgb(0, 0, 0, 0.0)";
+            document.getElementById("creamy").style.color = "transparent";
+          }
+
+    </script>
+
+</body>
+
+
+
+
+</html>
